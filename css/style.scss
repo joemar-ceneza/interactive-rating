@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 1rem;
+    background-color: hsl(216, 12%, 8%);
+}
+// Interactive Rating
+#interactive-rating{
+    background-color: hsl(213, 19%, 18%);
+    max-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    .rating-container{
+        padding: 2em 1.5em;
+        .star-rating{
+            margin: 0 0 2em 0;
+            .one-star,
+            .two-star,
+            .three-star,
+            .four-star,
+            .five-star{
+                padding: 0.8em;
+                border-radius: 50%;
+                background-color: hsl(210, 12%, 27%);
+                visibility: hidden;
+            }
+        }
+        .question-rating{
+            h1{
+                color: hsl(0, 0%, 100%);
+                font-size: 1.4rem;
+                margin: 0.5em 0;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+            }
+            p{
+                color: hsl(216, 12%, 54%);
+                font-size: 0.85rem;
+                letter-spacing: 0.5px;
+                margin: 0;
+            }
+            .rating-button{
+                display: flex;
+                justify-content: space-between;
+                margin: 2em 0;
+                .numbers{
+                    color: hsl(216, 12%, 54%);
+                    background-color: hsl(210, 12%, 27%);
+                    padding: 1.3em;
+                    border: none;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 0.9rem;
+                    }
+                    &:hover{
+                        background-color: hsl(25, 97%, 53%);
+                        transition: 0.5s;
+                        span{
+                            color: hsl(0, 0%, 100%);
+                            transition: 0.5s;
+                        }
+                    }
+                    &:focus{
+                        background-color: hsl(217, 12%, 63%);
+                        span{
+                            color: hsl(0, 0%, 100%);
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+            .rating-submit{
+                .submit{
+                    width: 100%;
+                    padding: 0.7em 0;
+                    border: none;
+                    border-radius: 40px;
+                    background-color: hsl(25, 97%, 53%);
+                    color: hsl(0, 0%, 100%);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    &:hover{
+                        background-color: hsl(0, 0%, 100%);
+                        color: hsl(25, 97%, 53%);
+                        transition: 0.5s;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+@media (max-width: 750px){
+    #interactive-rating{
+        width: 100%;
+    }
+}
