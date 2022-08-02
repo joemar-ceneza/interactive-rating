@@ -14,6 +14,6 @@ Users should be able to:
 
 ### Built with
 
--HTML
--CSS
--JavaScript
+- HTML
+- CSS
+- JavaScript
