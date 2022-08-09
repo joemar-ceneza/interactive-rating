@@ -15,5 +15,5 @@ Users should be able to:
 ### Built with
 
 - HTML
-- CSS
+- CSS, Sass
 - JavaScript
