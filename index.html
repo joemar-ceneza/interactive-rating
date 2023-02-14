@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section id="interactive-rating">
+        <div class="rating-container">
+            <div class="star-rating">
+                <img class="one-star" src="./images/icon-star.svg" alt="One Star Rating">
+                <img class="two-star" src="./images/icon-star.svg" alt="Two Star Rating">
+                <img class="three-star" src="./images/icon-star.svg" alt="Three Star Rating">
+                <img class="four-star" src="./images/icon-star.svg" alt="Four Star Rating">
+                <img class="five-star" src="./images/icon-star.svg" alt="Five Star Rating">
+            </div>
+            <div class="question-rating">
+                <h1>How did we do?</h1>
+                <p>Please let us know how we did with your support request. All feedback is appreciated
+                    to help us improved our offering!
+                </p>
+                <div class="rating-button">
+                    <button class="numbers one"><span>1</span></button>
+                    <button class="numbers two"><span>2</span></button>
+                    <button class="numbers three"><span>3</span></button>
+                    <button class="numbers four"><span>4</span></button>
+                    <button class="numbers five"><span>5</span></button>
+                </div>
+                <div class="error-message">
+                    <p>Please Rate our Work</p>
+                </div>
+                <div class="rating-submit">
+                    <button class="submit"><span>Submit</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="success-container">
+            <div class="image-rating">
+                <img src="./images/illustration-thank-you.svg" alt="Illustration thank you">
+            </div>
+            <div class="result-rating">
+                <p>You selected <span id="result">1</span> out of 5</p>
+            </div>
+            <div class="appreciation-message">
+                <h1>Thank you!</h1>
+                <p>We appreciate you taking the time to give a rating.
+                    If you ever need more support, dont hesitate to get
+                    in touch!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./javascript/app.js"></script>
+</body>
+</html>

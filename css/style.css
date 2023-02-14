@@ -1,0 +1,178 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1rem;
+  background-color: #121417;
+}
+
+#interactive-rating {
+  background-color: #252d37;
+  max-width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+
+#interactive-rating .rating-container {
+  padding: 2em 1.5em;
+}
+
+#interactive-rating .rating-container .star-rating {
+  margin: 0 0 2em 0;
+}
+
+#interactive-rating .rating-container .star-rating .one-star,
+#interactive-rating .rating-container .star-rating .two-star,
+#interactive-rating .rating-container .star-rating .three-star,
+#interactive-rating .rating-container .star-rating .four-star,
+#interactive-rating .rating-container .star-rating .five-star {
+  padding: 0.8em;
+  border-radius: 50%;
+  background-color: #3d454d;
+  visibility: hidden;
+}
+
+#interactive-rating .rating-container .question-rating h1 {
+  color: white;
+  font-size: 1.4rem;
+  margin: 0.5em 0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+#interactive-rating .rating-container .question-rating p {
+  color: #7c8798;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+#interactive-rating .rating-container .question-rating .rating-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2em 0 0.8em 0;
+}
+
+#interactive-rating .rating-container .question-rating .rating-button .numbers {
+  color: #7c8798;
+  background-color: #3d454d;
+  padding: 1.3em;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+#interactive-rating .rating-container .question-rating .rating-button .numbers span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 0.9rem;
+}
+
+#interactive-rating .rating-container .question-rating .rating-button .numbers:hover {
+  background-color: #fb7413;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#interactive-rating .rating-container .question-rating .rating-button .numbers:hover span {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#interactive-rating .rating-container .question-rating .rating-button .numbers:focus {
+  background-color: #959eac;
+}
+
+#interactive-rating .rating-container .question-rating .rating-button .numbers:focus span {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#interactive-rating .rating-container .question-rating .error-message {
+  visibility: hidden;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+#interactive-rating .rating-container .question-rating .error-message p {
+  color: red;
+}
+
+#interactive-rating .rating-container .question-rating .rating-submit .submit {
+  width: 100%;
+  padding: 0.7em 0;
+  border: none;
+  border-radius: 40px;
+  background-color: #fb7413;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#interactive-rating .rating-container .question-rating .rating-submit .submit:hover {
+  background-color: white;
+  color: #fb7413;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#interactive-rating .success-container {
+  display: none;
+  padding: 2em 1.5em;
+}
+
+#interactive-rating .success-container .image-rating {
+  text-align: center;
+}
+
+#interactive-rating .success-container .result-rating {
+  text-align: center;
+  margin: 2em;
+}
+
+#interactive-rating .success-container .result-rating p {
+  font-size: 0.8rem;
+  display: inline;
+  color: #fb7413;
+  background-color: #3f4c5a;
+  padding: 0.7em 1em;
+  border-radius: 18px;
+}
+
+#interactive-rating .success-container .appreciation-message {
+  text-align: center;
+}
+
+#interactive-rating .success-container .appreciation-message h1 {
+  color: #ffffff;
+}
+
+#interactive-rating .success-container .appreciation-message p {
+  color: #7c8798;
+}
+
+@media (max-width: 750px) {
+  #interactive-rating {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
